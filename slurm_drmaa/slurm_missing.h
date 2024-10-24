@@ -27,8 +27,6 @@
 extern void * slurm_list_peek (List l);
 #if SLURM_VERSION_NUMBER >= SLURM_VERSION_NUM(24,5,0)
 extern void * slurm_list_remove (list_itr_t *i);
-#else
-extern void * slurm_list_remove (ListIterator i);
 #endif
 
 extern int slurm_addto_step_list(List step_list, char *names);
