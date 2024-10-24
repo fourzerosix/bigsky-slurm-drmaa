@@ -448,8 +448,6 @@ slurmdrmaa_job_on_missing( fsd_job_t *self )
 
 #if SLURM_VERSION_NUMBER >= SLURM_VERSION_NUM(24,5,0)
 	list_itr_t *itr = NULL;
-#else
-	ListIterator itr = NULL;
 #endif
 	void *acct_db_conn = NULL;
 
